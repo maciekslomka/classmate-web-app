@@ -3,7 +3,7 @@
 A gamified, interactive educational web application designed for students and schools to track progress and engage in competitive learning modules. This project was developed from scratch as a product concept to align technical frontend architecture with core business and user validation logic.
 
 ## 🔗 Live Demo
-You can test the live deployment here: **[Wklej tutaj link do GitHub Pages po uruchomieniu]**
+You can test the live deployment here: **https://maciekslomka.github.io/classmate-web-app/**
 
 ---
 
@@ -30,5 +30,5 @@ As a Quality Assurance specialist, this application was heavily tested during de
 ---
 
 ## ⚙️ How to Run Locally
-1. Clone the repository: `git clone https://github.com/maciekslomka/classmate-pro-edition.git`
+1. Clone the repository: `git clone https://github.com/maciekslomka/classmate-web-app.git`
 2. Open `index.html` directly in any modern web browser.
