@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classmate - Pro Edition</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght=500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="home-screen" class="game-panel">
+      <div class="left-side">
+        <button class="nav-arrow profile-nav p-prev" onclick="changeSlide(-1)">
+          ◀
+        </button>
+        <button class="nav-arrow profile-nav p-next" onclick="changeSlide(1)">
+          ▶
+        </button>
+
+        <div class="profile-container">
+          <div class="profile-slider" id="pSlider">
+            <div class="profile-card">
+              <div class="avatar-box">
+                <div class="avatar-circle"></div>
+                <div class="lvl-badge">12</div>
+              </div>
+              <h2 class="username">PIOTR_L</h2>
+              <div class="elo-label">1240 ELO</div>
+              <div class="elo-box">
+                <span class="rank-label">STUDENT II</span>
+                <div class="xp-bar"><div class="xp-fill"></div></div>
+              </div>
+            </div>
+            <div class="profile-card text-center">
+              <h2>POSTĘP</h2>
+              <p class="emoji-large">📈</p>
+            </div>
+            <div class="profile-card text-center">
+              <h2>ZADANIA</h2>
+              <p class="emoji-large">🎯</p>
+            </div>
+          </div>
+          <div class="pager">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-zone">
+        <div class="mission-card">
+          <button class="nav-arrow">◀</button>
+          <div class="mission-info">
+            <span class="mission-label">AKTUALNA MISJA:</span>
+            <strong class="mission-title">📐 MATEMATYKA</strong>
+          </div>
+          <button class="nav-arrow">▶</button>
+        </div>
+        <button class="play-btn" onclick="startMatchmaking()">
+          <h1>GRAJ</h1>
+          <span>TRYB RIVALS</span>
+        </button>
+        <div class="tip-card" onclick="nextTip()">
+          <h4>CZY WIESZ, ŻE...</h4>
+          <p id="tipText">Całka oznaczona to pole pod wykresem funkcji.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="loading-screen" class="hidden">
+      <div class="loading-dot"></div>
+      <div class="loading-dot"></div>
+      <div class="loading-dot"></div>
+    </div>
+
+    <div id="match-screen" class="hidden versus-layout">
+      <div class="profile-container">
+        <div class="profile-card">
+          <div class="avatar-box">
+            <div class="avatar-circle"></div>
+            <div class="lvl-badge">12</div>
+          </div>
+          <h2 class="username">PIOTR_L</h2>
+          <div class="elo-label">1240 ELO</div>
+          <div class="elo-box ready-status">GOTOWY</div>
+        </div>
+      </div>
+
+      <div class="vs-divider">
+        <h2>RIVALS</h2>
+        <div class="vs-icon">⚔️</div>
+        <div id="match-timer">10s</div>
+      </div>
+
+      <div class="profile-container">
+        <div id="enemy-searching" class="profile-card searching-status">
+          <div class="avatar-box">
+            <div class="avatar-circle placeholder-circle"></div>
+          </div>
+          <h2 class="username">SZUKANIE...</h2>
+        </div>
+
+        <div id="enemy-found" class="profile-card hidden">
+          <div class="avatar-box">
+            <div class="avatar-circle enemy-circle"></div>
+            <div class="lvl-badge enemy-badge">15</div>
+          </div>
+          <h2 class="username">WRAITH_0X</h2>
+          <div class="elo-label">1350 ELO</div>
+          <div class="elo-box enemy-status">PRZECIWNIK</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
